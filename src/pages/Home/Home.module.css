@@ -1,0 +1,103 @@
+.homeContainer {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15rem;
+}
+
+.introTitle {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Allura", cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.lineBreak {
+    color: inherit;
+    text-decoration: none;
+    font-family: "sans-serif";
+    font-size: 1rem;
+    margin-bottom: 0.2;
+}
+
+.title {
+    color: inherit;
+    text-decoration: none;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 550;
+    font-size: 5rem;
+    margin-top: 0;
+}
+
+.itemContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.item1 {
+    height: 100px;
+    width: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+
+.item2 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: pink;
+}
+
+.item3 {
+    height: 100px;
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: red;
+}
+
+.itemContainer {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100%;
+}
+
+.item1 {
+    height: 100px;
+    width: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+
+.item2 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: pink;
+}
+
+.item3 {
+    height: 100px;
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: red;
+}

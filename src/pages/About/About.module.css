@@ -1,0 +1,42 @@
+.aboutContainer {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 15rem;
+}
+
+.itemContainer {
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+}
+
+.item1 {
+    height: 100px;
+    width: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightcoral;
+}
+
+.item2 {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: pink;
+}
+
+.item3 {
+    height: 100px;
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: red;
+}
