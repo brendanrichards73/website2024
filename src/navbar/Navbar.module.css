@@ -1,7 +1,6 @@
 .nav {
     display: flex;
     width: 100%;
-    color: white;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
@@ -35,16 +34,13 @@
     padding: 0.5rem;
 }
 
-.nav a.title:hover {
-    background-color: rgb(57, 43, 43);
-}
-
 .nav li.active a {
     text-decoration: underline;
 }
 
 .nav li:hover {
-    background-color: rgb(57, 43, 43);
+    color: rgba(237, 134, 43, 0.756);
+    font-weight: 800;
 }
 
 /* .nav li.active {

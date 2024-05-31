@@ -9,9 +9,7 @@ type CustomLinkprops = {
 export default function Navbar() {
     return (
         <nav className={styles.nav}>
-            <a href="/" className={styles.title}>
-                created by Brendan Richards
-            </a>
+            <h1 className={styles.title}>created by Brendan Richards</h1>
             <ul>
                 <CustomLink href="/">Home</CustomLink>
                 <CustomLink href="/about">About</CustomLink>

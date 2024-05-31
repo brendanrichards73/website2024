@@ -1,9 +1,10 @@
 import styles from "./Contact.module.css";
+import { bgStylesBlackWhite } from "../../utils/contants";
 
 export default function Contact() {
     return (
         <>
-            <div className={styles.contactContainer}>
+            <div className={styles.contactContainer} style={bgStylesBlackWhite}>
                 <div className={styles.itemContainer}>
                     <div className={styles.item1}>Contact 1</div>
                     <div className={styles.item2}>Contact 2</div>

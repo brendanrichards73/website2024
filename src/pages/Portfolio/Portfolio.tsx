@@ -1,9 +1,13 @@
 import styles from "./Portfolio.module.css";
+import { bgStylesBlackWhite } from "../../utils/contants";
 
 export default function Portfolio() {
     return (
         <>
-            <div className={styles.portfolioContainer}>
+            <div
+                className={styles.portfolioContainer}
+                style={bgStylesBlackWhite}
+            >
                 <h1 className={styles.portfolioTitle}>
                     Examples of personal projects
                 </h1>
