@@ -9,10 +9,10 @@
 }
 
 .portfolioTitle {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Gruppo", sans-serif;
     font-weight: 550;
-    padding-top: 3rem;
+    padding-top: 6rem;
 }
 
 .itemContainer {
@@ -26,28 +26,50 @@
 }
 
 .item1 {
-    width: 30%;
+    width: 15%;
     height: 80%;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: lightcoral;
+    margin: 20px;
 }
 
 .item2 {
-    width: 30%;
+    width: 15%;
     height: 80%;
     margin: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: pink;
 }
 
 .item3 {
-    width: 30%;
+    width: 15%;
     height: 80%;
     margin: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: red;
+}
+
+.item1 img,
+.item2 img,
+.item3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 5px;
 }
