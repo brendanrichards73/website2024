@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import styles from "./Portfolio.module.css";
 import { bgStylesBlackWhite } from "../../utils/contants";
-import { FaTimes } from "react-icons/fa";
+import { FaPlayCircle, FaTimes } from "react-icons/fa";
 
 export default function Portfolio() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,6 +45,7 @@ export default function Portfolio() {
                             src="/images/todolistImage.jpg"
                             alt="todo app"
                         ></img>
+                        <FaPlayCircle className={styles.playIcon} />
                     </div>
 
                     <div
@@ -67,6 +68,7 @@ export default function Portfolio() {
                             src="/images/lmfitnessImage.jpg"
                             alt="fitness app"
                         ></img>
+                        <FaPlayCircle className={styles.playIcon} />
                     </div>
 
                     <div
@@ -89,30 +91,30 @@ export default function Portfolio() {
                             src="/images/office-garden-2.jpg"
                             alt="garden app"
                         ></img>
+                        <FaPlayCircle className={styles.playIcon} />
                     </div>
                 </div>
+                {isModalOpen && (
+                    <div
+                        className={styles.modal}
+                        style={{
+                            left: clickX,
+                            top: clickY,
+                            width: itemWidth,
+                            height: itemHeight,
+                        }}
+                    >
+                        <FaTimes
+                            className={styles.closeIcon}
+                            onClick={() => setIsModalOpen(false)}
+                        />
+                        <video width="320" height="400" controls autoPlay>
+                            <source src={videoSource} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                )}
             </div>
-
-            {isModalOpen && (
-                <div
-                    className={styles.modal}
-                    style={{
-                        left: clickX,
-                        top: clickY,
-                        width: itemWidth,
-                        height: itemHeight,
-                    }}
-                >
-                    <FaTimes
-                        className={styles.closeIcon}
-                        onClick={() => setIsModalOpen(false)}
-                    />
-                    <video width="320" height="400" controls autoPlay>
-                        <source src={videoSource} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            )}
         </>
     );
 }
