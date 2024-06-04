@@ -11,6 +11,7 @@ export default function Home() {
                 <h1 className={styles.tagLine}>
                     React Developer & React Native Mobile Developer
                 </h1>
+                <h1 className={styles.lineBreak}>______________</h1>
             </div>
         </>
     );
