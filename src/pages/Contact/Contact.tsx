@@ -6,9 +6,17 @@ export default function Contact() {
         <>
             <div className={styles.contactContainer} style={bgStylesBlackWhite}>
                 <div className={styles.itemContainer}>
-                    <div className={styles.item1}>Contact 1</div>
-                    <div className={styles.item2}>Contact 2</div>
-                    <div className={styles.item3}>Contact 3</div>
+                    <div className={styles.email}>
+                        email: brendan.richards@btinternet.com
+                    </div>
+                    <a
+                        href="https://www.linkedin.com/in/brendan-richards-1b9257109"
+                        target="_blank"
+                        className={styles.linkedIn}
+                        rel="noreferrer"
+                    >
+                        LinkedIn
+                    </a>
                 </div>
             </div>
         </>
