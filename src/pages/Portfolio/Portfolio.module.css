@@ -1,5 +1,5 @@
 .portfolioContainer {
-    min-height: 100vh;
+    height: auto;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -9,8 +9,14 @@
 .portfolioTitle {
     font-size: 3rem;
     font-family: "Gruppo", sans-serif;
-    font-weight: 550;
+    font-weight: 650;
     padding-top: 1rem;
+}
+
+.rowContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .projectContainer {
@@ -45,8 +51,8 @@
 .item2,
 .item3 {
     position: relative;
-    width: 200px;
-    height: 400px;
+    width: 250px;
+    height: 500px;
     margin: 20px;
     border: 5px solid #000;
 }
@@ -121,11 +127,17 @@
 }
 
 .description {
+    max-width: 400px;
+    min-height: 200px;
     padding: 1rem;
-    align-items: flex-start;
-    justify-content: flex-start;
+    text-align: left;
     font-size: 14px;
-    background-color: #fffbfb;
+    font-family: "Courier New", Courier, monospace;
+    background: radial-gradient(circle at center, #fff, transparent);
+    margin: 10px;
+}
 
-    border: 2px solid #000;
+.webSiteItemRef {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }

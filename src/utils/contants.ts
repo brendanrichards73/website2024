@@ -6,7 +6,7 @@ export const bgStyles = {
 };
 
 export const bgStylesBlackWhite = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/images/garden-red-sky-black-white.jpg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/images/garden-bw-sky-2.png)`,
     backgroundSize: "cover",
     backgroundPosition: "bottom",
     backgroundAttachment: "fixed",
