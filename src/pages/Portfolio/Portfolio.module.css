@@ -3,35 +3,52 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-bottom: 4rem;
-    padding-top: 2rem;
+    justify-content: flex-start;
 }
 
 .portfolioTitle {
     font-size: 3rem;
     font-family: "Gruppo", sans-serif;
     font-weight: 550;
-    padding-top: 6rem;
+    padding-top: 1rem;
+}
+
+.projectContainer {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infoItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .itemContainer {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    height: 100vh;
     width: 100%;
-    padding: 1rem;
-    padding-top: 2rem;
 }
 
 .item1,
 .item2,
 .item3 {
     position: relative;
-    width: 15%;
-    height: 80%;
+    width: 200px;
+    height: 400px;
     margin: 20px;
+    border: 5px solid #000;
 }
 
 .item1 img,
@@ -81,23 +98,34 @@
 }
 
 .modal video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .closeIcon {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     padding: 5px;
-    z-index: 1;
+    z-index: 10;
+}
+.gitHubLink {
+    font-size: 20px;
+    color: #0d44aa;
+}
+
+.description {
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 14px;
+    background-color: #fffbfb;
+
+    border: 2px solid #000;
 }
