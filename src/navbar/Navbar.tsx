@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 type CustomLinkprops = {
@@ -31,9 +32,9 @@ function CustomLink({ href, children, ...props }: CustomLinkprops) {
                     : ""
             }
         >
-            <a href={href} {...props}>
+            <Link to={href} {...props}>
                 {children}
-            </a>
+            </Link>
         </li>
     );
 }
