@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Navbar.module.css";
 
 type CustomLinkprops = {
@@ -7,10 +8,20 @@ type CustomLinkprops = {
 };
 
 export default function Navbar() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <nav className={styles.nav}>
-            <h1 className={styles.title}>created by Brendan Richards</h1>
-            <ul>
+            <h1 className={styles.titleName}>created by Brendan Richards</h1>
+            <div
+                className={styles.hamburger}
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul className={isOpen ? styles.open : ""}>
                 <CustomLink href="/">Home</CustomLink>
                 <CustomLink href="/about">About</CustomLink>
                 <CustomLink href="/services">Portfolio</CustomLink>
