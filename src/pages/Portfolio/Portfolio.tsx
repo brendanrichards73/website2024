@@ -9,7 +9,6 @@ export default function Portfolio() {
 
     const item1Ref = useRef<HTMLDivElement | null>(null);
     const item2Ref = useRef<HTMLDivElement | null>(null);
-    const item3Ref = useRef<HTMLDivElement | null>(null);
 
     const handleClick = (videoSource: string) => (e: MouseEvent) => {
         setIsModalOpen(true);

@@ -1,42 +1,62 @@
 .aboutContainer {
-    min-height: 100vh;
-    width: 100vw;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.aboutTitle {
+    font-size: 3rem;
+    font-family: "Gruppo", sans-serif;
+    font-weight: 650;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.row {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 15rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.itemContainer {
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    padding: 1rem;
+.section1,
+.sectionText {
+    flex: 1;
+    margin: 0 15px;
 }
 
-.item1 {
-    height: 100px;
-    width: 50px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: lightcoral;
+.image1 {
+    width: 300px;
+    border: 10px solid #fff;
 }
 
-.item2 {
-    height: 100px;
-    width: 100px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: pink;
+.image2 {
+    width: 300px;
+    border: 10px solid #fff;
+}
+.image3 {
+    width: 300px;
+    border: 10px solid #fff;
 }
 
-.item3 {
-    height: 100px;
-    flex-grow: 1;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: red;
+.image4 {
+    width: 500px;
+    border: 10px solid #fff;
+}
+.sectionText {
+    text-align: justify;
+    font-family: "Gruppo", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: radial-gradient(circle at center, #fff, transparent);
+}
+
+.sectionText::first-letter {
+    font-size: 2em;
+    float: left;
+    margin-right: 5px;
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
 }

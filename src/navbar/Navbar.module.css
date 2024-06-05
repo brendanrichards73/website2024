@@ -41,10 +41,11 @@
 
 .nav li.active a {
     text-decoration: underline;
+    color: #fff;
 }
 
 .nav li:hover {
-    color: rgba(237, 134, 43, 0.756);
+    color: #fff;
     font-weight: 800;
 }
 
