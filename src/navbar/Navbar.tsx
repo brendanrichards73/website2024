@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 type CustomLinkprops = {
     href: string;
     children: React.ReactNode;
-    [key: string]: any;
+    [key: string]: unknown;
 };
 
 export default function Navbar() {
