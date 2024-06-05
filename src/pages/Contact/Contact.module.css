@@ -29,3 +29,21 @@
     color: blue;
     margin: 10px;
 }
+
+/* Add a media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .contactContainer {
+        padding-bottom: 5rem;
+    }
+
+    .itemContainer {
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .email,
+    .linkedIn {
+        font-size: 2rem;
+        margin: 5px;
+    }
+}

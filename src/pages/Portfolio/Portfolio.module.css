@@ -142,3 +142,48 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+
+/* Add a media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .portfolioTitle {
+        font-size: calc(1rem + 3vw);
+    }
+
+    .item1,
+    .item2,
+    .item3 {
+        width: calc(50px + 30vw);
+        height: calc(100px + 60vw);
+    }
+
+    .item1 img,
+    .item2 img,
+    .item3 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.gitHubLink {
+    font-size: calc(1rem + 2vw);
+}
+
+.description {
+    font-size: calc(1rem + 2vw);
+}
+
+.closeIcon {
+    font-size: calc(1rem + 2vw);
+}
+
+.projectContainer,
+.itemContainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemContainer img,
+.itemContainer video {
+    width: 100%;
+    height: auto;
+}

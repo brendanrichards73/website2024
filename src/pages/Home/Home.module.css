@@ -54,3 +54,26 @@
         opacity: 1;
     }
 }
+
+/* Add a media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .homeContainer {
+        padding-bottom: 1rem;
+    }
+
+    .introTitle {
+        font-size: calc(1rem + 3vw);
+    }
+
+    .lineBreak {
+        font-size: calc(1rem + 2vw);
+    }
+
+    .title {
+        font-size: calc(2rem + 3vw);
+    }
+
+    .tagLine {
+        font-size: calc(0.75rem + 2vw);
+    }
+}
