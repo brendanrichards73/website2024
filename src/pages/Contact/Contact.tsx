@@ -10,7 +10,7 @@ export default function Contact() {
                         email: brendan.richards@btinternet.com
                     </div>
                     <a
-                        href="https://www.linkedin.com/in/brendan-richards-1b9257109"
+                        href="https://www.linkedin.com/in/brendan-richards73"
                         target="_blank"
                         className={styles.linkedIn}
                         rel="noreferrer"
